@@ -1,0 +1,49 @@
+/* Course card enhancements for the detailed course data */
+.course-title {
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+}
+
+.course-description {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin: 0.5rem 0;
+}
+
+.tech-badge {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #ddd;
+}
+
+.status {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.course-card.completed .status {
+    color: var(--completed-color);
+}
+
+.course-card.incomplete .status {
+    color: var(--incomplete-color);
+}
