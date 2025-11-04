@@ -155,6 +155,8 @@ document.addEventListener('DOMContentLoaded', function () {
     // Example - set to true for courses you've completed:
     courses[0].completed = true; // CSE 110
     courses[1].completed = true; // WDD 130
+    courses[2].completed = true; // CSE 111
+    courses[3].completed = true; // CSE 210
     courses[4].completed = true; // WDD 131
 
     // Display all courses initially
