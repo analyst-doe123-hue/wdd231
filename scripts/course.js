@@ -153,9 +153,9 @@ function setupFilterButtons() {
 document.addEventListener('DOMContentLoaded', function () {
     // IMPORTANT: Update these based on your actual course completion status
     // Example - set to true for courses you've completed:
-    // courses[0].completed = true; // CSE 110
-    // courses[1].completed = true; // WDD 130
-    // courses[4].completed = true; // WDD 131
+    courses[0].completed = true; // CSE 110
+    courses[1].completed = true; // WDD 130
+    courses[4].completed = true; // WDD 131
 
     // Display all courses initially
     displayCourses();
