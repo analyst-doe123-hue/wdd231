@@ -43,7 +43,7 @@
         {
             "name": "Summit Construction",
             "address": "654 Builder's Avenue, Westside",
-            "phone": "(555) 567-8901",
+            "phone": "0712345678",
             "website": "https://summitconstruction.example.com",
             "image": "construction.jpg",
             "membershipLevel": 3,
@@ -53,7 +53,7 @@
         {
             "name": "Family Dental Care",
             "address": "987 Smile Boulevard, Medical Center",
-            "phone": "(555) 678-9012",
+            "phone": "0718622109",
             "website": "https://familydental.example.com",
             "image": "dental.jpg",
             "membershipLevel": 1,
@@ -63,7 +63,7 @@
         {
             "name": "Creative Web Designs",
             "address": "147 Digital Lane, Tech Hub",
-            "phone": "(555) 789-0123",
+            "phone": ")0713696930",
             "website": "https://creativeweb.example.com",
             "image": "chamber/images/web.jpg",
             "membershipLevel": 2,
