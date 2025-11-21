@@ -1,0 +1,3 @@
+touch index.html
+touch styles/home.css
+touch scripts/home.js weather.js
