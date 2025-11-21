@@ -1,5 +1,18 @@
-/* Home Page Specific Styles */
+/* Optimized Home Styles - Consolidated and Simplified */
 :root {
+    --primary-color: #1a4a7a;
+    --secondary-color: #2c6fb7;
+    --accent-color: #e74c3c;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    --text-color: #2c3e50;
+    --light-bg: #f8f9fa;
+    --white: #fff;
+    --border-color: #e9ecef;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+    --border-radius: 12px;
     --hero-overlay: rgba(26, 74, 122, 0.7);
 }
 
@@ -40,14 +53,14 @@
 }
 
 .hero-content h2 {
-    font-size: 3rem;
+    font-size: clamp(1.8rem, 4vw, 3rem);
     margin-bottom: 1rem;
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
     margin-bottom: 2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -73,7 +86,7 @@
     box-shadow: var(--shadow-hover);
 }
 
-/* Current Events Section */
+/* Current Events */
 .current-events {
     background: var(--white);
     padding: 4rem 0;
@@ -86,7 +99,7 @@
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
 }
 
 .events-grid {
@@ -124,7 +137,7 @@
 
 /* Weather Section */
 .weather {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: var(--white);
     padding: 4rem 0;
     margin: 3rem 0;
@@ -134,7 +147,7 @@
 .weather h2 {
     text-align: center;
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
 }
 
 .weather-content {
@@ -213,7 +226,7 @@
     text-transform: capitalize;
 }
 
-/* Spotlights Section */
+/* Spotlights */
 .spotlights {
     padding: 4rem 0;
 }
@@ -222,7 +235,7 @@
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 2.5rem);
 }
 
 .spotlight-grid {
@@ -320,14 +333,6 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .hero-content h2 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1.1rem;
-    }
-
     .weather-content {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -343,18 +348,18 @@
 }
 
 @media (max-width: 480px) {
-    .hero-content h2 {
-        font-size: 1.5rem;
-    }
-
     .cta-button {
         padding: 1rem 2rem;
         font-size: 1rem;
     }
 
-    .current-events h2,
-    .weather h2,
-    .spotlights h2 {
-        font-size: 2rem;
+    .spotlight-card,
+    .event-card {
+        padding: 1.5rem;
+    }
+
+    .spotlight-logo {
+        width: 100px;
+        height: 100px;
     }
 }
