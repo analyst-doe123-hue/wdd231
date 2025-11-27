@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Chamber of Commerce - Membership Application">
+    <meta name="author" content="Gaylord Ndenga">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Join - Chamber of Commerce">
+    <meta property="og:description" content="Apply for membership with the Chamber of Commerce">
+    <meta property="og:image" content="https://analyst-doe123-hue.github.io/wdd231/chamber/images/social-preview.png">
+    <meta property="og:url" content="https://analyst-doe123-hue.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <title>Join - Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="images/logo.png" alt="Chamber of Commerce Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Chamber of Commerce</h1>
+                    <span class="tagline">Building Business Community</span>
+                </div>
+            </div>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="join-header">
+            <div class="container">
+                <h1>Membership Application</h1>
+                <p>Join our business community and access exclusive benefits</p>
+            </div>
+        </section>
+
+        <div class="join-container">
+            <div class="form-section">
+                <form id="membershipForm" action="thankyou.html" method="get">
+                    <div class="form-group">
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="firstName" title="Enter your first name"
+                            autocomplete="given-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="lastName" title="Enter your last name"
+                            autocomplete="family-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orgTitle">Organizational Title:</label>
+                        <input type="text" id="orgTitle" name="orgTitle"
+                            title="Enter your title (letters, spaces, hyphens only; min 7 chars)"
+                            autocomplete="organization-title" pattern="[a-zA-Z\-\s]{7,}">
+                        <small>Must contain only letters, hyphens, and spaces (minimum 7 characters).</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" title="Enter a valid email address"
+                            autocomplete="email" placeholder="gaylordndenga4@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">Mobile Phone:</label>
+                        <input type="tel" id="mobile" name="mobilePhone" title="Enter your mobile phone number"
+                            autocomplete="tel" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orgName">Business/Organization Name:</label>
+                        <input type="text" id="orgName" name="orgName" title="Enter your organization's name"
+                            autocomplete="organization" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="membership">Membership Level:</label>
+                        <select id="membership" name="membershipLevel" title="Select a membership level">
+                            <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Business/Organization Description:</label>
+                        <textarea id="description" name="orgDescription" title="Describe your organization"
+                            rows="4"></textarea>
+                    </div>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                    <div class="form-group">
+                        <input type="submit" value="Submit Application" class="submit-button">
+                    </div>
+                </form>
+            </div>
+
+            <div class="membership-cards">
+                <div class="membership-card np-membership">
+                    <h3>NP Membership</h3>
+                    <p class="price">No Fee</p>
+                    <p>For non-profit organizations</p>
+                    <button class="info-button" data-level="np">Learn More</button>
+                </div>
+                <div class="membership-card bronze-membership">
+                    <h3>Bronze Membership</h3>
+                    <p class="price">$150/year</p>
+                    <p>Basic business benefits</p>
+                    <button class="info-button" data-level="bronze">Learn More</button>
+                </div>
+                <div class="membership-card silver-membership">
+                    <h3>Silver Membership</h3>
+                    <p class="price">$300/year</p>
+                    <p>Enhanced business benefits</p>
+                    <button class="info-button" data-level="silver">Learn More</button>
+                </div>
+                <div class="membership-card gold-membership">
+                    <h3>Gold Membership</h3>
+                    <p class="price">$500/year</p>
+                    <p>Premium business benefits</p>
+                    <button class="info-button" data-level="gold">Learn More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Membership Level Modals -->
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <ul>
+                    <li>Listing in our business directory</li>
+                    <li>Access to member-only events</li>
+                    <li>Monthly newsletter</li>
+                    <li>Community networking opportunities</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <ul>
+                    <li>All NP Membership benefits</li>
+                    <li>10% discount on chamber events</li>
+                    <li>Business training workshops</li>
+                    <li>Social media mentions</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <ul>
+                    <li>All Bronze Membership benefits</li>
+                    <li>25% discount on chamber events</li>
+                    <li>Spotlight feature on home page (quarterly)</li>
+                    <li>Premium training sessions</li>
+                    <li>Business referral program</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <ul>
+                    <li>All Silver Membership benefits</li>
+                    <li>50% discount on chamber events</li>
+                    <li>Spotlight feature on home page (monthly)</li>
+                    <li>Executive networking events</li>
+                    <li>Priority sponsorship opportunities</li>
+                    <li>VIP access to all chamber functions</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3><i class="fas fa-map-marker-alt"></i> Contact Information</h3>
+                <p><i class="fas fa-envelope"></i> info@buterechamber.org</p>
+                <p><i class="fas fa-phone"></i> +254 713 935 610</p>
+                <p><i class="fas fa-location-dot"></i> 123 Main Street, Butere, Kenya</p>
+            </div>
+
+            <div class="social-media">
+                <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social-link twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="development-info">
+                <p>&copy; <span id="currentYear"></span> Chamber of Commerce</p>
+                <p>Gaylord Ndenga | WDD 231</p>
+                <p><i class="fas fa-sync-alt"></i> Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/join.js" defer></script>
+</body>
+
+</html>
