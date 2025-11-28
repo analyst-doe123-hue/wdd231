@@ -1,0 +1,40 @@
+Project Proposal  “National Parks Explorer” Website
+1. Project Subject.
+
+National Parks Explorer : A three-page website showcasing national parks, their features, and upcoming activities.
+
+2. Project Description.
+
+The National Parks Explorer website will be a dynamic, responsive, and accessible three-page site built with contemporary HTML, CSS, and JavaScript ES Modules. The site will highlight categorized national parks, display park details from a local JSON data file, and provide user-friendly tools such as a gallery, event listings, and search/filter capabilities.
+
+The website will include:
+
+A Home Page (index.html) introducing the site and featuring a dynamic list of parks loaded using the Fetch API.
+
+A Parks Gallery Page displaying detailed park information, images, and a modal dialog for extended descriptions.
+
+An Events Page showcasing upcoming activities, filtered interactively using JavaScript.
+
+A fully functional contact form with its own action page.
+
+Local storage to store user preferences (e.g., dark/light theme).
+
+Responsive navigation, lazy-loaded images, and strong accessibility/usability features.
+
+3. Project Reason and Purpose.
+
+The purpose of the National Parks Explorer website is to demonstrate mastery of this course’s learning outcomes by creating a real-world, meaningful web experience built with modern development techniques.
+
+This project enables me to:
+
+Apply valid, semantic HTML and CSS to build accessible pages.
+
+Use JavaScript to fetch, process, and dynamically present JSON data.
+
+Implement essential browser features such as local storage, modal dialogs, responsive design, and client-side interaction.
+
+Follow performance optimization strategies learned in the course, including page weight control, lazy loading, and Lighthouse evaluation.
+
+Practice professional skills such as organization, clear communication, and adherence to standards—skills expected in real development teams.
+
+Overall, this project not only fulfills the technical requirements of WDD 231 but also allows me to create a polished, creative website that aligns with user experience principles and modern web development practices.
