@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover Butere - Explore the beautiful attractions and business opportunities in Butere, Kenya">
+    <meta name="author" content="Gaylord Ndenga">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Discover Butere - Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore Butere's attractions, landmarks, and business opportunities in our beautiful community.">
+    <meta property="og:image" content="https://analyst-doe123-hue.github.io/wdd231/chamber/images/social-preview.png">
+    <meta property="og:url" content="https://analyst-doe123-hue.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <title>Discover Butere - Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="images/logo.png" alt="Butere Chamber of Commerce Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Butere Chamber of Commerce</h1>
+                    <span class="tagline">Building Business Community</span>
+                </div>
+            </div>
+            <nav>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="discover-header">
+            <div class="container">
+                <h1>Discover Butere</h1>
+                <p>Explore the beauty, culture, and opportunities in our vibrant community</p>
+                <div id="visit-message" class="visit-message"></div>
+            </div>
+        </section>
+
+        <section class="demographics">
+            <div class="container">
+                <h2>About Butere</h2>
+                <div class="demographics-grid">
+                    <div class="demographic-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Population</h3>
+                        <p>Approximately 150,000 residents</p>
+                    </div>
+                    <div class="demographic-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>Butere-Mumias County, Western Kenya</p>
+                    </div>
+                    <div class="demographic-card">
+                        <i class="fas fa-industry"></i>
+                        <h3>Main Industries</h3>
+                        <p>Agriculture, Trade, Small-scale Manufacturing</p>
+                    </div>
+                    <div class="demographic-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Education</h3>
+                        <p>Multiple primary & secondary schools, Technical institutes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="attractions">
+            <div class="container">
+                <h2>Local Attractions & Points of Interest</h2>
+                <div id="attractions-grid" class="attractions-grid">
+                    <!-- Cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3><i class="fas fa-map-marker-alt"></i> Contact Information</h3>
+                <p><i class="fas fa-envelope"></i> info@buterechamber.org</p>
+                <p><i class="fas fa-phone"></i> +254 713 935 610</p>
+                <p><i class="fas fa-location-dot"></i> 123 Main Street, Butere, Kenya</p>
+            </div>
+
+            <div class="social-media">
+                <h3><i class="fas fa-share-alt"></i> Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter" class="social-link twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="development-info">
+                <p>&copy; <span id="currentYear"></span> Butere Chamber of Commerce</p>
+                <p>Gaylord Ndenga | WDD 231</p>
+                <p><i class="fas fa-sync-alt"></i> Last Modified: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/discover.js"></script>
+</body>
+
+</html>
