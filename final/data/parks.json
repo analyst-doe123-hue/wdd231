@@ -1,0 +1,475 @@
+[
+    {
+        "id": 1,
+        "name": "Maasai Mara National Reserve",
+        "region": "Narok County",
+        "description": "World-famous for the Great Migration of over 1.5 million wildebeest and hundreds of thousands of zebras and gazelles crossing the Mara River. Managed by Narok County Government.",
+        "type": "National Reserve",
+        "established": "1961",
+        "size": "1,510 sq km",
+        "animals": [
+            "Lion",
+            "Elephant",
+            "Leopard",
+            "Buffalo",
+            "Rhino",
+            "Cheetah",
+            "Hyena"
+        ],
+        "activities": [
+            "Game Drives",
+            "Hot Air Balloon Safaris",
+            "Cultural Visits",
+            "Bird Watching"
+        ],
+        "best_time": "July to October (Migration Season)",
+        "entry_fee": "KES 1,200 (Citizens), $80 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/maasai-mara-national-reserve",
+        "image": "images/maasai.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Amboseli National Park",
+        "region": "Kajiado County",
+        "description": "Famous for its large elephant herds and spectacular views of Mount Kilimanjaro. One of Kenya's most popular parks with swamp grounds that ensure year-round wildlife viewing.",
+        "type": "National Park",
+        "established": "1974",
+        "size": "392 sq km",
+        "animals": [
+            "Elephant",
+            "Lion",
+            "Cheetah",
+            "Giraffe",
+            "Zebra",
+            "Wildebeest",
+            "Buffalo"
+        ],
+        "activities": [
+            "Game Drives",
+            "Photography",
+            "Bird Watching",
+            "Cultural Tours"
+        ],
+        "best_time": "June to October & January to February",
+        "entry_fee": "KES 860 (Citizens), $60 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/amboseli-national-park",
+        "image": "images/amboseli.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Tsavo East National Park",
+        "region": "Taita-Taveta County",
+        "description": "One of the world's largest game parks, known for its 'red elephants' due to red soil. Home to the Yatta Plateau, Mudanda Rock, and Lugard Falls.",
+        "type": "National Park",
+        "established": "1948",
+        "size": "13,747 sq km",
+        "animals": [
+            "Red Elephant",
+            "Lion",
+            "Giraffe",
+            "Hippo",
+            "Crocodile",
+            "Buffalo"
+        ],
+        "activities": [
+            "Game Drives",
+            "Bird Watching",
+            "Photography",
+            "Camping"
+        ],
+        "best_time": "June to October",
+        "entry_fee": "KES 860 (Citizens), $52 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/tsavo-east-national-park",
+        "image": "images/tsavo.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Tsavo West National Park",
+        "region": "Taita-Taveta County",
+        "description": "Famous for Mzima Springs where you can watch hippos and fish from an underwater chamber. Features dramatic volcanic landscapes and Shetani lava flows.",
+        "type": "National Park",
+        "established": "1948",
+        "size": "9,065 sq km",
+        "animals": [
+            "Hippo",
+            "Crocodile",
+            "Elephant",
+            "Lion",
+            "Leopard",
+            "Rhino"
+        ],
+        "activities": [
+            "Game Drives",
+            "Hippo Viewing",
+            "Bird Watching",
+            "Hiking"
+        ],
+        "best_time": "June to October",
+        "entry_fee": "KES 860 (Citizens), $52 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/tsavo-west-national-park",
+        "image": "images/tsavow.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Samburu National Reserve",
+        "region": "Samburu County",
+        "description": "Home to unique species found north of the equator: Grevy's zebra, Somali ostrich, reticulated giraffe, gerenuk, and Beisa oryx along the Ewaso Ng'iro river.",
+        "type": "National Reserve",
+        "established": "1985",
+        "size": "165 sq km",
+        "animals": [
+            "Grevy's Zebra",
+            "Gerenuk",
+            "Somali Ostrich",
+            "Elephant",
+            "Lion",
+            "Leopard"
+        ],
+        "activities": [
+            "Game Drives",
+            "Cultural Visits",
+            "Bird Watching",
+            "Riverside Walks"
+        ],
+        "best_time": "June to October & January to February",
+        "entry_fee": "KES 1,200 (Citizens), $80 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/samburu-national-reserve",
+        "image": "images/samburu.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Lake Nakuru National Park",
+        "region": "Nakuru County",
+        "description": "Famous for its flamingo populations that turn the lake shores pink. A rhino sanctuary with both black and white rhinos, and home to Rothschild's giraffe.",
+        "type": "National Park",
+        "established": "1961",
+        "size": "188 sq km",
+        "animals": [
+            "Flamingo",
+            "Rhino",
+            "Lion",
+            "Leopard",
+            "Baboon",
+            "Waterbuck"
+        ],
+        "activities": [
+            "Bird Watching",
+            "Game Drives",
+            "Photography",
+            "Hiking"
+        ],
+        "best_time": "Year-round",
+        "entry_fee": "KES 860 (Citizens), $60 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/lake-nakuru-national-park",
+        "image": "images/nakuru.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Aberdare National Park",
+        "region": "Central Kenya",
+        "description": "Mountainous park with dense rainforests, waterfalls, and moorlands. Famous for the Treetops and Ark lodges where wildlife visits waterholes at night.",
+        "type": "National Park",
+        "established": "1950",
+        "size": "767 sq km",
+        "animals": [
+            "Elephant",
+            "Buffalo",
+            "Colobus Monkey",
+            "Bongo",
+            "Leopard",
+            "Hyena"
+        ],
+        "activities": [
+            "Game Drives",
+            "Hiking",
+            "Bird Watching",
+            "Fishing",
+            "Night Game Viewing"
+        ],
+        "best_time": "June to September",
+        "entry_fee": "KES 860 (Citizens), $52 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/aberdare-national-park",
+        "image": "images/aberdare.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Mount Kenya National Park",
+        "region": "Central Kenya",
+        "description": "UNESCO World Heritage Site and Biosphere Reserve surrounding Africa's second highest mountain. Unique alpine vegetation and wildlife adapted to high altitudes.",
+        "type": "National Park & Biosphere Reserve",
+        "established": "1949",
+        "size": "715 sq km",
+        "animals": [
+            "Elephant",
+            "Buffalo",
+            "Colobus Monkey",
+            "Hyrax",
+            "Leopard",
+            "Duiker"
+        ],
+        "activities": [
+            "Mountain Climbing",
+            "Hiking",
+            "Bird Watching",
+            "Camping",
+            "Trout Fishing"
+        ],
+        "best_time": "January to February, June to September",
+        "entry_fee": "KES 860 (Citizens), $52 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/mount-kenya-national-park",
+        "image": "images/mountk.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Meru National Park",
+        "region": "Meru County",
+        "description": "Wild and less-visited park famous for Elsa the lioness from 'Born Free'. Diverse landscapes from grasslands to forests, with 13 rivers and streams.",
+        "type": "National Park",
+        "established": "1968",
+        "size": "870 sq km",
+        "animals": [
+            "Elephant",
+            "Lion",
+            "Cheetah",
+            "Giraffe",
+            "Zebra",
+            "Hippo",
+            "Crocodile"
+        ],
+        "activities": [
+            "Game Drives",
+            "Fishing",
+            "Bird Watching",
+            "Camping"
+        ],
+        "best_time": "June to October & January to February",
+        "entry_fee": "KES 860 (Citizens), $52 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/meru-national-park",
+        "image": "images/meru.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Hell's Gate National Park",
+        "region": "Naivasha",
+        "description": "Unique park where visitors can walk, cycle, or rock climb among wildlife. Features dramatic geothermal steam vents, cliffs, and gorges.",
+        "type": "National Park",
+        "established": "1984",
+        "size": "68 sq km",
+        "animals": [
+            "Buffalo",
+            "Zebra",
+            "Giraffe",
+            "Gazelle",
+            "Baboon",
+            "Klipspringer"
+        ],
+        "activities": [
+            "Cycling",
+            "Hiking",
+            "Rock Climbing",
+            "Bird Watching",
+            "Camping"
+        ],
+        "best_time": "Year-round",
+        "entry_fee": "KES 860 (Citizens), $26 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/hells-gate-national-park",
+        "image": "images/hellsgate.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Nairobi National Park",
+        "region": "Nairobi",
+        "description": "World's only national park within a capital city, just 7km from Nairobi's city center. Offers wildlife viewing with a city skyline backdrop.",
+        "type": "National Park",
+        "established": "1946",
+        "size": "117 sq km",
+        "animals": [
+            "Lion",
+            "Rhino",
+            "Giraffe",
+            "Zebra",
+            "Buffalo",
+            "Cheetah",
+            "Hyena"
+        ],
+        "activities": [
+            "Game Drives",
+            "Animal Orphanage",
+            "Bird Watching",
+            "Picnics",
+            "Camping"
+        ],
+        "best_time": "Year-round",
+        "entry_fee": "KES 860 (Citizens), $43 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/nairobi-national-park",
+        "image": "images/nairobi.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Ol Pejeta Conservancy",
+        "region": "Laikipia",
+        "description": "Largest black rhino sanctuary in East Africa, home to the last two northern white rhinos. Also features a chimpanzee sanctuary.",
+        "type": "Conservancy",
+        "established": "2004",
+        "size": "360 sq km",
+        "animals": [
+            "Rhino",
+            "Chimpanzee",
+            "Elephant",
+            "Lion",
+            "Wild Dog",
+            "Grevy's Zebra"
+        ],
+        "activities": [
+            "Game Drives",
+            "Rhino Tracking",
+            "Chimp Sanctuary",
+            "Lion Tracking",
+            "Bird Watching"
+        ],
+        "best_time": "Year-round",
+        "entry_fee": "KES 3,450 (Citizens), $105 (Non-residents)",
+        "kws_link": "https://www.olpejetaconservancy.org/",
+        "image": "images/olpejeta.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Lake Bogoria National Reserve",
+        "region": "Baringo County",
+        "description": "Famous for its geysers and hot springs, with large flocks of flamingos. Scenic escarpment views and home to the Greater Kudu.",
+        "type": "National Reserve",
+        "established": "1970",
+        "size": "107 sq km",
+        "animals": [
+            "Flamingo",
+            "Greater Kudu",
+            "Baboon",
+            "Warthog",
+            "Hyena",
+            "Buffalo"
+        ],
+        "activities": [
+            "Bird Watching",
+            "Hot Springs",
+            "Hiking",
+            "Photography",
+            "Game Drives"
+        ],
+        "best_time": "Year-round",
+        "entry_fee": "KES 1,200 (Citizens), $35 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/lake-bogoria-national-reserve",
+        "image": "images/bogoria.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Mount Elgon National Park",
+        "region": "Trans-Nzoia County",
+        "description": "Ancient extinct volcano with the world's largest volcanic base. Features caves, waterfalls, hot springs, and the largest elephant population in Kenya.",
+        "type": "National Park",
+        "established": "1968",
+        "size": "1,279 sq km",
+        "animals": [
+            "Elephant",
+            "Buffalo",
+            "Colobus Monkey",
+            "Duiker",
+            "Forest Hog",
+            "Leopard"
+        ],
+        "activities": [
+            "Hiking",
+            "Cave Exploration",
+            "Bird Watching",
+            "Camping",
+            "Mountain Climbing"
+        ],
+        "best_time": "June to August & December to March",
+        "entry_fee": "KES 860 (Citizens), $22 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/mount-elgon-national-park",
+        "image": "images/mountelgon.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Ruma National Park",
+        "region": "Homa Bay County",
+        "description": "Only protected area in Kenya for the endangered roan antelope. Rolling savannah with riverine forests along the Lambwe Valley.",
+        "type": "National Park",
+        "established": "1966",
+        "size": "120 sq km",
+        "animals": [
+            "Roan Antelope",
+            "Rothschild Giraffe",
+            "Oribi",
+            "Hyena",
+            "Leopard",
+            "Jackal"
+        ],
+        "activities": [
+            "Game Drives",
+            "Bird Watching",
+            "Photography",
+            "Camping",
+            "Hiking"
+        ],
+        "best_time": "Year-round",
+        "entry_fee": "KES 860 (Citizens), $22 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/ruma-national-park",
+        "image": "images/ruma.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Shimba Hills National Reserve",
+        "region": "Kwale County",
+        "description": "Coastal forest reserve known for its population of the rare Sable Antelope. Features waterfalls, ancient baobab trees, and diverse birdlife.",
+        "type": "National Reserve",
+        "established": "1968",
+        "size": "192 sq km",
+        "animals": [
+            "Sable Antelope",
+            "Elephant",
+            "Leopard",
+            "Buffalo",
+            "Duiker",
+            "Monkey"
+        ],
+        "activities": [
+            "Game Drives",
+            "Bird Watching",
+            "Hiking",
+            "Waterfall Visits",
+            "Cultural Tours"
+        ],
+        "best_time": "June to October & January to February",
+        "entry_fee": "KES 1,200 (Citizens), $35 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/shimba-hills-national-reserve",
+        "image": "images/shimbahills.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Kakamega Forest National Reserve",
+        "region": "Kakamega County",
+        "description": ".",
+        "type": "National Park",
+        "established": "1961",
+        "size": "188 sq km",
+        "animals": [
+            "Flamingo",
+            "Rhino",
+            "Lion",
+            "Leopard",
+            "Baboon",
+            "Waterbuck"
+        ],
+        "activities": [
+            "Bird Watching",
+            "Game Drives",
+            "Photography",
+            "Hiking"
+        ],
+        "best_time": "Year-round",
+        "entry_fee": "KES 860 (Citizens), $60 (Non-residents)",
+        "kws_link": "https://www.kws.go.ke/lake-nakuru-national-park",
+        "image": "images/kakamega.jpg"
+
+}
+]
