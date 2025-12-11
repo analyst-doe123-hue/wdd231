@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kenya National Parks Explorer - Discover Kenya's beautiful national parks, wildlife, and conservation efforts with detailed information and planning tools.">
+    <meta name="author" content="Gaylord Ndenga">
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Kenya National Parks Explorer">
+    <meta property="og:description" content="Discover the beauty of Kenya's national parks and wildlife reserves">
+    <meta property="og:image" content="images/kenya-parks-hero.jpg">
+    <meta property="og:url" content="https://gaylordndenga.github.io/wdd231/final">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kenya National Parks Explorer">
+    <meta name="twitter:description" content="Discover the beauty of Kenya's national parks and wildlife reserves">
+    <meta name="twitter:image" content="images/kenya-parks-hero.jpg">
+    <title>Home | Kenya National Parks Explorer</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Slab:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="National Parks Explorer Logo" width="50" height="50">
+                <h1>National Parks Explorer</h1>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="parks.html" class="nav-link">Parks</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <section class="theme-toggle-section">
+                        <div class="container">
+                            <div class="theme-toggle-wrapper">
+                                <label for="theme-toggle" class="theme-toggle-label">
+                                    <span class="theme-icon">🌙</span>
+                                    <span class="theme-text">Dark Mode</span>
+                                    <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox">
+                                    <span class="theme-toggle-slider"></span>
+                                    <span class="theme-icon">☀️</span>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h2 id="hero-heading">Discover Kenya's Natural Treasures</h2>
+                <p>Explore over 60 national parks across Kenya</p>
+                <a href="parks.html" class="btn btn-primary">Start Exploring</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-home.jpg" alt="Panoramic view of mountains in a national park" loading="lazy"
+                    width="1200" height="400">
+            </div>
+        </section>
+
+        <section class="featured-parks" aria-labelledby="featured-parks-heading">
+            <div class="container">
+                <h2 id="featured-parks-heading">Featured Parks</h2>
+                <div class="search-filter">
+                    <input type="text" id="search-input" placeholder="Search parks by name..."
+                        aria-label="Search parks">
+                    <select id="state-filter" aria-label="Filter by state">
+                        <option value="">All counties</option>
+                        <!-- Options will be populated by JavaScript -->
+                    </select>
+                </div>
+                <div class="parks-grid" id="featured-parks-container">
+                    <!-- Parks will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <section class="quick-stats" aria-labelledby="stats-heading">
+            <div class="container">
+                <h2 id="stats-heading" class="visually-hidden">Quick Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number" id="total-parks">0</span>
+                        <span class="stat-label">National Parks</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="total-states">0</span>
+                        <span class="stat-label">Counties Covered</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="upcoming-events">0</span>
+                        <span class="stat-label">Upcoming Events</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Contact Us</h2>
+                <form id="contact-form" class="contact-form" action="form-action.html" method="get">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required minlength="2" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="feedback">Website Feedback</option>
+                            <option value="partnership">Partnership Opportunity</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                            Subscribe to our newsletter
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+            <!-- Park Details Modal -->
+            <div class="modal" id="park-modal" role="dialog" aria-labelledby="modal-title" aria-modal="true" hidden>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 id="modal-title">Park Details</h2>
+                        <button class="modal-close" aria-label="Close modal">&times;</button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <!-- Modal content will be populated by JavaScript -->
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary modal-close">Close</button>
+                        <a href="parks.html" class="btn btn-primary">View All Parks</a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-overlay" id="modal-overlay"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>National Parks Explorer</h3>
+                    <p>Discover the beauty of Kenya's national parks.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="parks.html">Parks</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Video Demonstration</h4>
+                    <p><a href="https://www.youtube.com/watch?v=demo" target="_blank" rel="noopener">Watch project
+                            walkthrough</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> National Parks Explorer. All rights reserved.</p>
+                <p>This site is for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -38,3 +38,35 @@ Follow performance optimization strategies learned in the course, including page
 Practice professional skills such as organization, clear communication, and adherence to standards—skills expected in real development teams.
 
 Overall, this project not only fulfills the technical requirements of WDD 231 but also allows me to create a polished, creative website that aligns with user experience principles and modern web development practices.
+
+
+# National Parks Explorer
+
+A responsive, dynamic website showcasing national parks in the United States. Built with HTML5, CSS3, and JavaScript ES6+.
+
+## Features
+
+### ✅ Required Functionality
+- **Three complete pages**: Home, Parks Gallery, Events
+- **Dynamic content**: Fetches park data from JSON file
+- **Modal dialog**: Interactive park details modal
+- **Local Storage**: Theme preference and favorite parks
+- **Responsive design**: Mobile-first approach
+- **Accessibility**: ARIA labels, semantic HTML, keyboard navigation
+- **Form with action page**: Contact form with data display
+
+### 🎨 Design Elements
+- **Color Scheme**: Nature-inspired greens from site plan
+- **Typography**: Roboto Slab (headings) & Montserrat (body)
+- **Responsive Navigation**: Hamburger menu for mobile
+- **Design Principles**: Proximity, alignment, repetition, contrast
+
+### ⚡ JavaScript Features
+- **Fetch API**: Async data loading with error handling
+- **ES Modules**: Modular code organization
+- **Array Methods**: filter(), map(), forEach()
+- **Template Literals**: Dynamic content generation
+- **DOM Manipulation**: Event listeners, dynamic updates
+- **Debouncing**: Optimized search functionality
+
+## File Structure

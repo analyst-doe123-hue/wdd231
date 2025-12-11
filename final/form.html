@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form submission confirmation">
+    <meta name="author" content="Student Name">
+    <title>Form Submission | National Parks Explorer</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="simple-header">
+            <h1>Form Submission Received</h1>
+            <p>Thank you for contacting National Parks Explorer</p>
+        </header>
+        
+        <main class="form-action-content">
+            <div class="confirmation-message">
+                <h2>Submission Details</h2>
+                <p>We've received your message and will get back to you soon.</p>
+                
+                <div class="submission-details" id="submission-details">
+                    <!-- Form data will be displayed here -->
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="index.html" class="btn btn-primary">Return to Home</a>
+                    <a href="index.html#contact" class="btn btn-secondary">Send Another Message</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="simple-footer">
+            <p>&copy; <span id="current-year">2024</span> National Parks Explorer</p>
+            <p><a href="index.html">Return to Home Page</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        // Parse and display URL parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            const detailsContainer = document.getElementById('submission-details');
+            const currentYearSpan = document.getElementById('current-year');
+            
+            // Set current year
+            currentYearSpan.textContent = new Date().getFullYear();
+            
+            if (params.toString()) {
+                let html = '<dl>';
+                
+                params.forEach((value, key) => {
+                    let label = key.charAt(0).toUpperCase() + key.slice(1);
+                    let displayValue = value;
+                    
+                    if (key === 'newsletter') {
+                        displayValue = value === 'yes' ? 'Subscribed' : 'Not subscribed';
+                    }
+                    
+                    html += `<dt>${label}:</dt><dd>${displayValue}</dd>`;
+                });
+                
+                html += '</dl>';
+                detailsContainer.innerHTML = html;
+            } else {
+                detailsContainer.innerHTML = '<p>No form data submitted.</p>';
+            }
+        });
+    </script>
+</body>
+</html>

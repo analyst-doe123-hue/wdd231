@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover upcoming events, activities, and programs at national parks across the United States. Plan your visit with our events calendar.">
+    <meta name="author" content="Student Name">
+    <meta property="og:title" content="Events | National Parks Explorer">
+    <meta property="og:description" content="Upcoming national park events">
+    <meta property="og:image" content="https://example.com/images/hero-events.jpg">
+    <meta property="og:url" content="https://example.com/events.html">
+    <title>Events Calendar | National Parks Explorer</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/events.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="National Parks Explorer Logo" width="50" height="50">
+                </a>
+                <h1>National Parks Explorer</h1>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="parks.html" class="nav-link">Parks</a></li>
+                    <li><a href="events.html" class="nav-link active" aria-current="page">Events</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-hero" aria-labelledby="page-hero-heading">
+            <div class="container">
+                <h1 id="page-hero-heading">Upcoming Events</h1>
+                <p>Join ranger-led programs, workshops, and special events at national parks</p>
+            </div>
+        </section>
+
+        <section class="events-section" aria-labelledby="events-heading">
+            <div class="container">
+                <div class="events-controls">
+                    <div class="filter-controls">
+                        <div class="filter-group">
+                            <label for="event-type-filter">Event Type:</label>
+                            <select id="event-type-filter" aria-label="Filter by event type">
+                                <option value="">All Types</option>
+                                <option value="Ranger Program">Ranger Program</option>
+                                <option value="Workshop">Workshop</option>
+                                <option value="Guided Hike">Guided Hike</option>
+                                <option value="Visitor Center">Visitor Center Event</option>
+                                <option value="Special Event">Special Event</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="month-filter">Month:</label>
+                            <select id="month-filter" aria-label="Filter by month">
+                                <option value="">All Months</option>
+                                <!-- Months will be populated by JavaScript -->
+                            </select>
+                        </div>
+                        
+                        <button id="reset-filters" class="btn btn-secondary">Reset Filters</button>
+                    </div>
+                </div>
+                
+                <div class="events-container" id="events-container">
+                    <!-- Events will be loaded dynamically -->
+                    <div class="loading-spinner" id="loading-spinner">
+                        <div class="spinner"></div>
+                        <p>Loading events...</p>
+                    </div>
+                </div>
+                
+                <div class="events-stats">
+                    <p>Showing <span id="events-count">0</span> events out of <span id="total-events">0</span> total</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>National Parks Explorer</h3>
+                    <p>Discover the beauty of America's national parks.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="parks.html">Parks</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Video Demonstration</h4>
+                    <p><a href="https://www.youtube.com/watch?v=demo" target="_blank" rel="noopener">Watch project walkthrough</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> National Parks Explorer. All rights reserved.</p>
+                <p>This site is for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
